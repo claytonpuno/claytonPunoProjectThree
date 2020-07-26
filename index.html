@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+    <!-- <link rel="stylesheet" href="./styles/sass/main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46dce38978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<main>
+		<header>
+			<h1>sand.tv</h1>
+		</header>
+		<form action="">
+			<fieldset class="drink">
+                <p>Choose your Content</p>
+                <p>Gaming</p>
+				<label for="valorant">Valorant</label>
+                <input type="radio" name="game" id="valorant" value="valorant">
+                
+				<label for="csgo">Counter-Strike:Global-Offensive</label>
+                <input type="radio" name="game" id="csgo" value="csgo">
+
+                <label for="fortnite">Fortnite</label>
+                <input type="radio" name="game" id="fortnite" value="fortnite">
+                
+				<label for="lol">League of Legends</label>
+                <input type="radio" name="game" id="lol" value="lol">
+                
+                <label for="wow">World of Warcraft</label>
+                <input type="radio" name="game" id="wow" value="wow">
+
+                <label for="poe">POE</label>
+                <input type="radio" name="game" id="poe" value="poe">
+
+                <label for="rag">Ragnarok NOVA</label>
+                <input type="radio" name="game" id="rag" value="rag">
+
+                <p>IRL</p>                
+				<label for="cooking">Cooking</label>
+                <input type="radio" name="game" id="cooking" value="cook">
+                
+                <label for="art">Art</label>
+                <input type="radio" name="game" id="art" value="art">
+
+                <label for="fitness">Fitness</label>
+                <input type="radio" name="game" id="fitness" value="fitness">
+
+                <label for="karaoke">Karaoke</label>
+                <input type="radio" name="game" id="karaoke" value="karaoke">
+                
+            </fieldset>	
+            
+			<fieldset class="lang">
+				<p>Select a Lanuage</p>
+				<label for="english">English</label>
+                <input type="radio" name="language" id="english" value="eng">
+                
+				<label for="french">French</label>
+                <input type="radio" name="language" id="french" value="fr">
+                
+                <label for="tagalog">Tagalog</label>
+                <input type="radio" name="language" id="tagalog" value="tag">
+                
+                <label for="polish">Polish</label>
+                <input type="radio" name="language" id="polish" value="pol">
+
+                <label for="bosnian">Bosnian</label>
+                <input type="radio" name="language" id="bosnian" value="bos">
+
+                <label for="vietnamese">Vietnamese</label>
+                <input type="radio" name="language" id="vietnamese" value="viet">
+                
+				<div class="submit-container">
+					<input type="submit" value="Show me a stream!">
+				</div>
+			</fieldset>
+		</form>
+		<section class="results">
+		</section>
+	</main>
+
+
+    <!-- JS and JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
