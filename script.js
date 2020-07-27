@@ -56,13 +56,13 @@ const streamers = [
   {    
     title: 'rDQlous',
     game: ['valorant', 'karaoke', 'lol'],
-    language: ['eng', 'tag', 'FR'],
+    language: ['eng', 'tag', 'fr'],
     type: 'GAMING'
   },
   {    
     title: 'shondal',
     game: ['valorant', 'csgo', 'lol', 'karaoke'],
-    language: ['eng', 'VIET'],
+    language: ['eng', 'viet'],
     type: 'GAMING'
   },
   {    
@@ -74,7 +74,7 @@ const streamers = [
   {    
     title: 'Alverson',
     game: ['valorant', 'csgo', 'fortnite', 'karaoke'],
-    language: ['eng', 'BOS'],
+    language: ['eng', 'bos'],
     type: 'GAMING'
   }
 ]
@@ -86,16 +86,24 @@ $(function() {
     // prevent default when submitting form
     event.preventDefault();
 
-    const usersChoice = streamers.filter(streamer => {
+    // save users choice into a variable
+    const usersChoice = streamers.filter((streamer) => {
     
       const { game, language } = streamer
-  
+    // return streamers if users choice matches streamers game && language
       return game.includes($("input[name=game]:checked").val())
       && language.includes($("input[name=language]:checked").val())
      });
-    
+
     console.log(usersChoice);
 
+    $('.results').html(`<h2>${usersChoice[0].title}</h2>`)
+
+    console.log(`${usersChoice[0].title}`);
+     
+    
+    
+  
 
     
 

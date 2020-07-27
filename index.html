@@ -3,81 +3,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Generator</title>
-    <!-- <link rel="stylesheet" href="./styles/sass/main.css"> -->
+    <link rel="stylesheet" href="./styles/sass/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/46dce38978.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div class="wrapper">
+            <h1>sand.tv</h1>
+        </div>
+    </header>
 
 	<main>
-		<header>
-			<h1>sand.tv</h1>
-		</header>
-		<form action="">
-			<fieldset class="drink">
-                <p>Choose your Content</p>
-                <p>Gaming</p>
-				<label for="valorant">Valorant</label>
-                <input type="radio" name="game" id="valorant" value="valorant">
-                
-				<label for="csgo">Counter-Strike:Global-Offensive</label>
-                <input type="radio" name="game" id="csgo" value="csgo">
+        <div class="wrapper">
+            <form action="">
+                <fieldset class="gameChoices">
+                    <p>Choose your Content</p>
+                    <p>Gaming</p>
+                    <div class="flexWrapper">
 
-                <label for="fortnite">Fortnite</label>
-                <input type="radio" name="game" id="fortnite" value="fortnite">
-                
-				<label for="lol">League of Legends</label>
-                <input type="radio" name="game" id="lol" value="lol">
-                
-                <label for="wow">World of Warcraft</label>
-                <input type="radio" name="game" id="wow" value="wow">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/VALORANT-285x380.jpg" alt="">
+                            </div>
+                            <label for="valorant">Valorant</label>
+                            <input type="radio" name="game" id="valorant" value="valorant">
+                        </div>
 
-                <label for="poe">POE</label>
-                <input type="radio" name="game" id="poe" value="poe">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Counter-Strike_ Global Offensive-285x380.jpg" alt="">
+                            </div>
+                            <label for="csgo">Counter-Strike:Global-Offensive</label>
+                            <input type="radio" name="game" id="csgo" value="csgo">
+                        </div>
 
-                <label for="rag">Ragnarok NOVA</label>
-                <input type="radio" name="game" id="rag" value="rag">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Fortnite-285x380.jpg" alt="">
+                            </div>
+                            <label for="fortnite">Fortnite</label>
+                            <input type="radio" name="game" id="fortnite" value="fortnite">
+                            
+                        </div>
 
-                <p>IRL</p>                
-				<label for="cooking">Cooking</label>
-                <input type="radio" name="game" id="cooking" value="cook">
-                
-                <label for="art">Art</label>
-                <input type="radio" name="game" id="art" value="art">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/League of Legends-285x380.jpg" alt="">
+                            </div>
+                            <label for="lol">League of Legends</label>
+                            <input type="radio" name="game" id="lol" value="lol">
+                        </div>
 
-                <label for="fitness">Fitness</label>
-                <input type="radio" name="game" id="fitness" value="fitness">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/World of Warcraft-285x380.jpg" alt="">
+                            </div>
+                            <label for="wow">World of Warcraft</label>
+                            <input type="radio" name="game" id="wow" value="wow">
+                        </div>
 
-                <label for="karaoke">Karaoke</label>
-                <input type="radio" name="game" id="karaoke" value="karaoke">
-                
-            </fieldset>	
-            
-			<fieldset class="lang">
-				<p>Select a Lanuage</p>
-				<label for="english">English</label>
-                <input type="radio" name="language" id="english" value="eng">
-                
-				<label for="french">French</label>
-                <input type="radio" name="language" id="french" value="fr">
-                
-                <label for="tagalog">Tagalog</label>
-                <input type="radio" name="language" id="tagalog" value="tag">
-                
-                <label for="polish">Polish</label>
-                <input type="radio" name="language" id="polish" value="pol">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Path of Exile-285x380.jpg" alt="">
+                            </div>
+                            <label for="poe">POE</label>
+                            <input type="radio" name="game" id="poe" value="poe">
+                        </div>
 
-                <label for="bosnian">Bosnian</label>
-                <input type="radio" name="language" id="bosnian" value="bos">
-
-                <label for="vietnamese">Vietnamese</label>
-                <input type="radio" name="language" id="vietnamese" value="viet">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Ragnarok Online-285x380.jpg" alt="">
+                            </div>
+                            <label for="rag">Ragnarok NOVA</label>
+                            <input type="radio" name="game" id="rag" value="rag">
+                        </div>
+                    </div>
+                </fieldset>
                 
-				<div class="submit-container">
-					<input type="submit" value="Show me a stream!">
-				</div>
-			</fieldset>
-		</form>
+                <fieldset class="irlChoices">
+                    <p>IRL</p> 
+                    
+                    <div class="flexWrapper">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Food & Drink-285x380.jpg" alt="">
+                            </div>
+                            <label for="cooking">Cooking</label>
+                            <input type="radio" name="game" id="cooking" value="cook">
+                        </div>
+    
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Art-285x380.jpg" alt="">
+                            </div>
+                            <label for="art">Art</label>
+                            <input type="radio" name="game" id="art" value="art">
+                        </div>
+    
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Fitness & Health-285x380.jpg" alt="">
+                            </div>
+                            <label for="fitness">Fitness</label>
+                            <input type="radio" name="game" id="fitness" value="fitness">
+                        </div>
+    
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./assets/Special Events-285x380.jpg" alt="">
+                            </div>
+                            <label for="karaoke">Karaoke</label>
+                            <input type="radio" name="game" id="karaoke" value="karaoke"> 
+                        </div>    
+                    </div>
+                </fieldset>	
+                
+                <fieldset class="lang">
+                    <p>Select a Lanuage</p>
+                    <div class="flexWrapper">
+                        <div class="box">
+                            <div class="imgBox">
+
+                            </div>
+                            <label for="english">English</label>
+                            <input type="radio" name="language" id="english" value="eng">
+                        </div>
+
+                        <div class="box">
+                            <div class="imgBox">
+
+                            </div>
+                            <label for="french">French</label>
+                            <input type="radio" name="language" id="french" value="fr">
+                        </div>
+
+                        <div class="box">
+                            <div class="iconBox">
+
+                            </div>
+                            <label for="tagalog">Tagalog</label>
+                            <input type="radio" name="language" id="tagalog" value="tag">
+                        </div>
+
+                        <div class="box">
+                            <div class="iconBox">
+
+                            </div>
+                            <label for="polish">Polish</label>
+                            <input type="radio" name="language" id="polish" value="pol">
+                        </div>
+
+                        <div class="box">
+                            <div class="iconBox">
+
+                            </div>
+                            <label for="bosnian">Bosnian</label>
+                            <input type="radio" name="language" id="bosnian" value="bos">
+                        </div>
+
+                        <div class="box">
+                            <div class="iconBox">
+
+                            </div>
+                            <label for="vietnamese">Vietnamese</label>
+                            <input type="radio" name="language" id="vietnamese" value="viet">
+                        </div>
+
+                    </div>
+
+                    <div class="submit-container">
+                        <input type="submit" value="Show me a stream!">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+		
 		<section class="results">
 		</section>
 	</main>
