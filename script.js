@@ -94,9 +94,10 @@ $(function() {
       return game.includes($("input[name=game]:checked").val())
       && language.includes($("input[name=language]:checked").val())
      });
-
+    //  console log new array
     console.log(usersChoice);
 
+    
     usersChoice.forEach(function (streamArr) {
       const streamerOptions = streamArr.title;
       console.log(streamerOptions);
@@ -106,20 +107,4 @@ $(function() {
   });
 
   });
-
-  $("img").on('click', function() {
-    $(this).each(function() {
-      $(this).css({
-        "box-shadow": "none"
-      });
-    })
-    $(this).css({
-      "box-shadow": "-20px 20px #ffffff"
-    });
-    
-  });
 });
-
-// To Do List: 
-// namespace
-// iterate through an array inside and object inside an array
