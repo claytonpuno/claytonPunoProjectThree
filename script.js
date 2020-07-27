@@ -88,16 +88,16 @@ $(function() {
 
     // save users choice into a variable
     const usersChoice = streamers.filter((streamer) => {
-    
       const { game, language } = streamer
     // return streamers if users choice matches streamers game && language
       return game.includes($("input[name=game]:checked").val())
       && language.includes($("input[name=language]:checked").val())
      });
+
     //  console log new array
     console.log(usersChoice);
 
-    
+    // get the user's choice and display the title of the object
     usersChoice.forEach(function (streamArr) {
       const streamerOptions = streamArr.title;
       console.log(streamerOptions);
