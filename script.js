@@ -97,16 +97,26 @@ $(function() {
 
     console.log(usersChoice);
 
-    $('.results').html(`<h2>${usersChoice[0].title}</h2>`)
+    usersChoice.forEach(function (streamArr) {
+      const streamerOptions = streamArr.title;
+      console.log(streamerOptions);
+      $('.results').append(`<div class="streamerBox">
+      <h2>${streamerOptions}</h2>
+      </div>`);
+  });
 
-    console.log(`${usersChoice[0].title}`);
-     
-    
-    
-  
+  });
 
+  $("img").on('click', function() {
+    $(this).each(function() {
+      $(this).css({
+        "box-shadow": "none"
+      });
+    })
+    $(this).css({
+      "box-shadow": "-20px 20px #ffffff"
+    });
     
-
   });
 });
 

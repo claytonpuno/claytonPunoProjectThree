@@ -14,6 +14,10 @@ html,body {
     overflow-x: hidden; 
 }
 
+body {
+    background-color: #a4a3b6;
+}
+
 .wrapper {
     max-width: 1280px;
     width: 100%;
@@ -21,8 +25,11 @@ html,body {
 }
 
 header {
-    background-color: red;
+    background: linear-gradient(rgba(0,0,0,0.3)), url(../../assets/photo-1550745165-9bc0b252726f.jpeg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
+
 }
 
 form {
@@ -31,6 +38,7 @@ form {
 
 input[type='radio'] {
     width: 100%;
+    margin-top: 50px;
 }
 
 .flexWrapper {
@@ -49,4 +57,23 @@ input[type='radio'] {
     label, input {
         padding: 10px;
     }
+}
+
+form {
+    margin: 100px 0;
+}
+
+.gameChoices {
+    background-color: #2a1b3d;
+    padding: 50px;
+}
+
+.langChoices {
+    background-color: #44318d;
+    padding: 50px;
+}
+
+.imgBox img {
+    box-shadow: -20px 20px #44318d;
+    cursor: pointer;
 }

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 138px;
+    line-height: 126px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 5px 5px #a4b3b6;
+    padding: 50px;
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 80px;
+    line-height: 92px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 50px;
+    text-shadow: 5px 5px #a4b3b6;
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.submitBtn {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #2a1b3d;
+    color: #a4b3b6;
+
+    &:hover {
+        background-color: #a4b3b6;
+        color: #2a1b3d;
+        transition: 0.7s ease;
+    }
+}
+
+.streamerBox {
+    background-color: 2a1b3d;
+    height: 100vh;
+}
+

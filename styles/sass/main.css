@@ -229,6 +229,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: #a4a3b6;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 100%;
@@ -236,7 +240,10 @@ html, body {
 }
 
 header {
-  background-color: red;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/photo-1550745165-9bc0b252726f.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/photo-1550745165-9bc0b252726f.jpeg);
+  background-position: center;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -246,6 +253,7 @@ form {
 
 input[type='radio'] {
   width: 100%;
+  margin-top: 50px;
 }
 
 .flexWrapper {
@@ -276,5 +284,100 @@ input[type='radio'] {
 
 .box label, .box input {
   padding: 10px;
+}
+
+form {
+  margin: 100px 0;
+}
+
+.gameChoices {
+  background-color: #2a1b3d;
+  padding: 50px;
+}
+
+.langChoices {
+  background-color: #44318d;
+  padding: 50px;
+}
+
+.imgBox img {
+  -webkit-box-shadow: -20px 20px #44318d;
+          box-shadow: -20px 20px #44318d;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 138px;
+  line-height: 126px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 5px 5px #a4b3b6;
+  padding: 50px;
+}
+
+h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 80px;
+  line-height: 92px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 50px;
+  text-shadow: 5px 5px #a4b3b6;
+}
+
+h3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 50px;
+}
+
+h4 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.submitBtn {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #2a1b3d;
+  color: #a4b3b6;
+}
+
+.submitBtn:hover {
+  background-color: #a4b3b6;
+  color: #2a1b3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.streamerBox {
+  background-color: 2a1b3d;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
